@@ -3,9 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Homework</title>
 </head>
 <body>
-    
+    <main class="main-content container">
+        <div class="sign-up-card card-item">
+            <h1 class="sign-up__title">Create an Account</h1>
+            <form action="" class="sign-up__form">
+                <div class="f-l-container">
+                    <div class="container-wrapper">
+                        <div class="label-wrapper">
+                            <label for="f-name">First Name</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" name="f-name" id="f-name" class="input-item">
+                        </div>
+                    </div>
+                    <div class="container-wrapper">
+                        <div class="label-wrapper">
+                            <label for="l-name">Last Name</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" name="l-name" id="l-name" class="input-item">
+                        </div>
+                    </div>
+                </div>
+                <div class="label-wrapper">
+                    <label for="mail">E-mail</label>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" name="mail" id="mail" class="input-item--email">
+                </div>
+                <span class="extra-text">We'll never share your email with anyone else.</span>
+                <div class="label-wrapper">
+                    <label for="s-male" class="gender-container">Male
+                        <input type="radio" name="s-male" id="s-male">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="s-female" class="gender-container">Female
+                        <input type="radio" name="s-female" id="s-female">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="city-country-container">
+                    <div class="container-wrapper">
+                        <div class="label-wrapper">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="custom-select">
+                            <select name="country" id="country" class="input-item--select">
+                                <option value="select">Select</option>
+                                <option value="ua">Ukraine</option>
+                                <option value="usa">USA</option>
+                                <option value="pol">Poland</option>
+                                <option value="can">Canada</option>
+                                <option value="it">Italy</option>
+                                <option value="fra">France</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="label-wrapper">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" name="city" id="city" class="input-item">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="sign-up-button">Sign Up</button>
+                <div class="extra-text">
+                    <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="" class="extra--rules">Terms of Use</a> and <a href="" class="extra--rules">Privacy Policy</a>.</p>
+                </div>
+                <hr>
+                <div class="sign-up-footer">
+                    <p>Have an account? <a href="" class="sign-up--log">Log In</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="profile-card card-item container">
+            <h1 class="profile-title">Profile</h1>
+            <img src="images/📷 Image.png" alt="">
+            <div class="profile-download__buttons">
+                <input type="file" name="upload" id="upload" hidden>
+                <div class="custom-upload">
+                    <label for="upload">
+                        <img src="icons/🔹 Icon Color (2).png" alt="upload">
+                    </label>
+                </div>
+                <button class="custom-delete"><img src="icons/🔹 Icon Color.png" alt="delete"></button>
+                <span class="extra-text">Up to 1 MB (300x300)</span>
+            </div>
+            <form action="" class="profile__form">
+            <div class="profile-content">
+                <div class="container-wrapper">
+                    <div class="label-wrapper">
+                        <label for="f-name">First Name</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="f-name" id="f-name" class="input-item">
+                    </div>
+                </div>
+                <div class="container-wrapper">
+                    <div class="label-wrapper">
+                        <label for="mail">E-mail</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" name="mail" id="mail" class="input-item">
+                    </div>
+                </div>
+                <div class="container-wrapper">
+                    <div class="label-wrapper">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="custom-select">
+                        <select name="country" id="country" class="input-item--select">
+                            <option value="select">Select</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="usa">USA</option>
+                            <option value="pol">Poland</option>
+                            <option value="can">Canada</option>
+                            <option value="it">Italy</option>
+                            <option value="fra">France</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container-wrapper">
+                    <div class="label-wrapper">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="city" id="city" class="input-item">
+                    </div>
+                </div>
+                <div class="container-wrapper">
+                    <div class="label-wrapper">
+                        <label for="z-code">Zip Code</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="z-code" id="z-code" class="input-item">
+                    </div>
+                </div>
+                <div class="container-wrapper">
+                    <div class="label-wrapper">
+                        <label for="tel">Phone Number</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="tel" id="tel" class="input-item">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="profile-button">Update</button>
+        </form>
+        </div>
+    </main>
 </body>
 </html>
